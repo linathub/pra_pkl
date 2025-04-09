@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nerf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="login">
+            <a href="#location">Location</a>
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <header>
+            <div class="header-container">
+                <!-- Logo Toko -->
+                <div class="logo_toko">
+                    <img src="c:\Users\LENOVO\Downloads\Kids_Toys_Logo-removebg-preview.png" alt="Toy logo" class="nav_logo"/>
+                </div>
+                
+                <!-- Search Bar -->
+                <form class="search-form">
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class="search-input" type="search" placeholder="Search">
+                    </div>
+                </form>
+                <div class="header-icons">
+                    <a href="#wishlist" class="icon-link">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </a>
+                    <a href="#user" class="icon-link">
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+
+                    <div class="cart-icon-wrapper">
+                        <a href="#" id="cart-icon" class="icon-link">
+                          <span class="material-symbols-outlined">shopping_cart</span>
+                          <span class="cart-count">0</span> <!-- jumlah item -->
+                        </a>
+                        <div id="cart-popup" class="cart-popup">
+                          <h4>Keranjang</h4>
+                          <ul id="cart-list-navbar">
+                            <li id="empty-cart" class="empty-cart">
+                              <h4>Keranjang Anda Kosong</h4>
+                              <button onclick="window.location.href='#'" class="btn-continue">Lanjutkan belanja</button>
+                              <p><strong>Sudah punya akun ?</strong></p>
+                              <p><a href="#login">Login</a> untuk checkout lebih cepat</p>
+                            </li>
+                          </ul>
+                          <p id="cart-total" class="cart-total">Total: Rp 0</p>
+                          
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="nav_link">
+                <div class="nav-item dropdown">
+                    <a href="#toys&games" class="dropdown-toggle">Toys & Games 
+                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#">Building Blocks</a>
+                        <a href="#">Action Figures</a>
+                        <a href="#">Toy Clay</a>
+                        <a href="#">Dolls & Accessories</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#videogames" class="dropdown-toggle">Video Games & Consoles
+                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#">Console Accessories</a>
+                        <a href="#">Game Consoles</a>
+                        <a href="#">Video Game</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#brands" class="dropdown-toggle">Brands
+                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#">Play-Doh</a>
+                        <a href="#">Lego</a>
+                        <a href="#">Nerf</a>
+                        <a href="#">Beby Alive</a>
+                    </div>
+                </div>
+
+                <a href="#sale">Sale</a>
+            </nav>
+
+            
+        </header>
+    </nav> 
+
+    <div class="gambarr">
+        <img src="c:\Users\LENOVO\Downloads\aset linasabrina\WhatsApp Image 2025-04-08 at 16.57.53_9d0b2dae.jpg" alt="gambar">                 
+    </div>
+
+
+<!-- product -->
+    <section class="products-showcase">     
+        <div class="product-list">
+          <div class="product-card">
+            <button class="favorite"><i data-lucide="heart"></i></button>
+            <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Elsa">
+            <div class="info">
+              <p class="title">Boneka Pinguin</p>
+              <p class="price">Rp. 50.000</p>
+              <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+
+            </div>
+          </div>
+      
+          <div class="product-card">
+            <button class="favorite"><i data-lucide="heart"></i></button>
+            <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Elsa">
+            <div class="info">
+              <p class="title">Boneka Pinguin</p>
+              <p class="price">Rp. 50.000</p>
+              <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+
+            </div>
+          </div>
+      
+          <div class="product-card">
+            <button class="favorite"><i data-lucide="heart"></i></button>
+            <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Elsa">
+            <div class="info">
+              <p class="title">Boneka Pinguin</p>
+              <p class="price">Rp. 50.000</p>
+              <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+
+            </div>
+          </div>
+      
+          <div class="product-card">
+            <button class="favorite"><i data-lucide="heart"></i></button>
+            <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Anna">
+            <div class="info">
+              <p class="title">Boneka Pinguin</p>
+              <p class="price">Rp. 75.000</p>
+              <button class="add-to-cart" onclick="addToCart('Boneka Pinguin', 75000)">Add to cart</button>
+
+            </div>
+          </div>
+    
+        <div class="product-list">
+            <div class="product-card">
+              <button class="favorite"><i data-lucide="heart"></i></button>
+              <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Elsa">
+              <div class="info">
+                <p class="title">Boneka Pinguin</p>
+                <p class="price">Rp. 50.000</p>
+                <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+              </div>
+            </div>
+        
+            <div class="product-card">
+              <button class="favorite"><i data-lucide="heart"></i></button>
+              <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Elsa">
+              <div class="info">
+                <p class="title">Boneka Pinguin</p>
+                <p class="price">Rp. 50.000</p>
+                <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+              </div>
+            </div>
+        
+            <div class="product-card">
+              <button class="favorite"><i data-lucide="heart"></i></button>
+              <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Elsa">
+              <div class="info">
+                <p class="title">Boneka Pinguin</p>
+                <p class="price">Rp. 50.000</p>
+                <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+              </div>
+            </div>
+        
+            <div class="product-card">
+              <button class="favorite"><i data-lucide="heart"></i></button>
+              <img src="c:\Users\LENOVO\Downloads\☆★.jpeg" alt="Anna">
+              <div class="info">
+                <p class="title">Boneka Pinguin</p>
+                <p class="price">Rp. 50.000</p>
+                <button class="add-to-cart" onclick="addToCart('Boneka Beruang', 75000)">Add to cart</button>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">TENTANG</h3>
+                <p>Toko mainan berkualitas sejak tadi. Menyediakan berbagai mainan edukatif dan koleksi eksklusif.</p>
+                <a href="#about" class="footer-link">Tentang Kami</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">LAYANAN PELANGGAN</h3>
+                <ul class="footer-links">
+                    <li><a href="#help">Bantuan</a></li>
+                    <li><a href="#payment">Metode Pembayaran</a></li>
+                    <li><a href="#shipping">Gratis Ongkir</a></li>
+                    <li><a href="#contact">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">PEMBAYARAN</h3>
+                <div class="payment-methods">
+                    <img src="assets/payment/visa.png" alt="Visa">
+                    <img src="assets/payment/mastercard.png" alt="Mastercard">
+                    <img src="assets/payment/gopay.png" alt="Gopay">
+                    <img src="assets/payment/ovo.png" alt="OVO">
+                </div>
+                
+                <h3 class="social-title">IKUTI KAMI</h3>
+                <div class="social-media">
+                    <a href="#facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#youtube"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 ToyToyShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+      
+
+
+    <!-- js -->
+
+    <script>
+        lucide.createIcons();
+      </script>
+      <script>
+        // Untuk touch devices
+        document.querySelectorAll('.dropdown-toggle').forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('mobile-open');
+                }
+            });
+        });
+        </script> 
+        
+        <script>
+            const cart = [];
+            const cartListNavbar = document.getElementById('cart-list-navbar');
+            const cartCount = document.querySelector('.cart-count');
+            const cartIcon = document.getElementById('cart-icon');
+            const cartPopup = document.getElementById('cart-popup');
+            const cartTotal = document.getElementById('cart-total');
+            const emptyCartMessage = document.getElementById('empty-cart');
+          
+            function updateCartUI() {
+              cartListNavbar.innerHTML = '';
+              let total = 0;
+          
+              if (cart.length === 0) {
+                cartListNavbar.appendChild(emptyCartMessage);
+                emptyCartMessage.style.display = 'block';
+                cartTotal.textContent = 'Total: Rp 0';
+                return;
+              }
+          
+              cart.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                  ${item.title} - ${item.price}
+                  <button class="remove-item" data-index="${index}">&times;</button>
+                `;
+                cartListNavbar.appendChild(li);
+          
+                const priceNum = parseInt(item.price.replace(/[^\d]/g, ''), 10);
+                total += priceNum;
+              });
+          
+              emptyCartMessage.style.display = 'none';
+              cartTotal.textContent = `Total: Rp ${total.toLocaleString('id-ID')}`;
+            }
+          
+            function saveCartToLocalStorage() {
+              localStorage.setItem('cart', JSON.stringify(cart));
+            }
+          
+            function loadCartFromLocalStorage() {
+              const savedCart = localStorage.getItem('cart');
+              if (savedCart) {
+                cart.push(...JSON.parse(savedCart));
+                cartCount.textContent = cart.length;
+                updateCartUI();
+              }
+            }
+          
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+              button.addEventListener('click', function () {
+                const productCard = button.closest('.product-card');
+                const title = productCard.querySelector('.title').textContent;
+                const price = productCard.querySelector('.price').textContent;
+          
+                cart.push({ title, price });
+                cartCount.textContent = cart.length;
+                updateCartUI();
+                saveCartToLocalStorage(); // <-- simpan
+              });
+            });
+          
+            cartListNavbar.addEventListener('click', function (e) {
+              if (e.target.classList.contains('remove-item')) {
+                const index = parseInt(e.target.dataset.index, 10);
+                cart.splice(index, 1);
+                cartCount.textContent = cart.length;
+                updateCartUI();
+                saveCartToLocalStorage(); // <-- simpan perubahan
+              }
+            });
+          
+            cartIcon.addEventListener('click', function (e) {
+              e.preventDefault();
+              cartPopup.style.display = cartPopup.style.display === 'block' ? 'none' : 'block';
+            });
+          
+            document.addEventListener('click', function (e) {
+              if (!cartIcon.contains(e.target) && !cartPopup.contains(e.target)) {
+                cartPopup.style.display = 'none';
+              }
+            });
+          
+            // Panggil saat halaman dibuka
+            loadCartFromLocalStorage();
+          </script>
+          
+
+
+  
+        
+</body>
+</html>
